@@ -55,8 +55,3 @@ tags: [dita]     # TAG names should always be lowercase
 </taskbody>
 </task>
 ```
-
-Procedure 2:
-assets/lib/Manual denial close and auto adjustment configuration.xml
-
-[SFM feature guide](/assets/lib/Feature Guide-Episode Snapshot Financial Reporting Tables_Redacted.pdf)
