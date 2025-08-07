@@ -6,6 +6,8 @@ categories: [Writing sample, API Docs]
 tags: [api]     # TAG names should always be lowercase
 pin: true
 ---
+This sample was written as part of the [Documening APIs: a guide for technical writers and engineers](https://idratherbewriting.com/learnapidoc/) course by Tom Johnson. This sample is an API reference document for a ficitonal API resource.
+
 # Surfreport
 Contains information about surfing conditions, including the surf height, wind speed, water temperature, and tide. Also provides a recommendation about whether or not to go surfing.
 

@@ -5,6 +5,8 @@ date: '2025-08-07 13:42:19 -0700'
 categories: [Writing sample, DITA]
 tags: [dita]     # TAG names should always be lowercase
 ---
+This sample was written in Oxygen XML using the DITA structure. This sample is a procedure topic following the DITA structure. An accompanying concept topic is included in my portfolio.  
+
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE task PUBLIC>

@@ -2,7 +2,7 @@
 layout: post
 title: PDF samples
 date: '2025-08-07 14:41:50 -0700'
-categories: [Writing sample]
+categories: [Writing sample, DITA]
 tags: [PDF]     # TAG names should always be lowercase
 ---
 This article includes links to two PDF files. 
