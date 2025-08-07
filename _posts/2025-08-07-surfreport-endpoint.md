@@ -65,13 +65,54 @@ The following is a sample response from the `surfreport\{beachId}` endpoint:
 ```
 
 ## Response definitions
-| Item                          | Description                                                                                                                                                                                                                                                                                                                                             | Type    |
-| ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- |
-| beach                         | The name of the beach you requested according to the `{beachId}`.                                                                                                                                                                                                                                                                                       | String  |
-| day                           | The day of the week selected.                                                                                                                                                                                                                                                                                                                           | Object  |
-| time                          | The time for the conditions. This item is only included if you include a time parameter in the request.                                                                                                                                                                                                                                                 | String  |
-| `{day}/{time}`/tide           | The level of tide at the beach for a specific day and time. Tide is the distance inland that the water rises to. Positive numbers indicate the tide is higher inland. Negative numbers indicate that the tide is out toward the sea. The 0 point reflects the line when a tide is neither going in nor out but is in transition between the two states. | Integer |
-| `{day}/{time}`/wind           | The wind speed at the beach, measured in knots (nautical miles per hour). Wind affects the surf height and general wave conditions. Wind speeds of more than 15 knots make surf conditions undesirable because the wind creates white caps and choppy waters.                                                                                           | Integer |
-| `{day}/{time}`/watertemp      | The temperature of the ocean water, returned in Fahrenheit or Celcius depending on the unit of measurement you specified. Water temperatures below 70 F usually require wearing a wetsuit.                                                                                                                                                              | Integer |
-| `{day}/{time}`/surfheight     | The height of the waves, returned in either feet or centimeters depending on the unit of measurement you specified. A minimum surf height of 3 feet is needed for surfing. Surf heights exceeding 10 feet are not safe.                                                                                                                                 | Integer |
-| `{day}/{time}`/recommendation | An overall recommendation of whether or not you should go surfing. The recommendation is based on a combination of factors including wind, watertemp, and surfheight. Three responses are possible: (1) "Go surfing!", (2) "Surfing conditions are okay, not great.", and (3) "Not a good day for surfing."                                             | String  |
+<div class="divTable">
+    <div class="thead">
+        <div class="row">
+            <div class="header">Item</div>
+            <div class="header">Description</div>
+            <div class="header">Type</div>
+        </div>
+    </div>
+    <div class="tbody">
+        <div class="row">
+            <div class="cell">beach</div>
+            <div class="cell">The name of the beach you requested according to the `{beachId}`.</div>
+            <div class="cell">String</div>
+        </div>
+        <div class="row">
+            <div class="cell">day</div>
+            <div class="cell">The day of the week selected.</div>
+            <div class="cell">Object</div>
+        </div>
+        <div class="row">
+            <div class="cell">time</div>
+            <div class="cell">The time for the conditions. This item is only included if you include a time parameter in the request.</div>
+            <div class="cell">String</div>
+        </div>
+        <div class="row">
+            <div class="cell">`{day}/{time}`/tide</div>
+            <div class="cell">The level of tide at the beach for a specific day and time. Tide is the distance inland that the water rises to. Positive numbers indicate the tide is higher inland. Negative numbers indicate that the tide is out toward the sea. The 0 point reflects the line when a tide is neither going in nor out but is in transition between the two states.</div>
+            <div class="cell">Integer</div>
+        </div>
+        <div class="row">
+            <div class="cell">`{day}/{time}`/wind</div>
+            <div class="cell">The wind speed at the beach, measured in knots (nautical miles per hour). Wind affects the surf height and general wave conditions. Wind speeds of more than 15 knots make surf conditions undesirable because the wind creates white caps and choppy waters.</div>
+            <div class="cell">Integer</div>
+        </div>
+        <div class="row">
+            <div class="cell">`{day}/{time}`/watertemp</div>
+            <div class="cell">The temperature of the ocean water, returned in Fahrenheit or Celcius depending on the unit of measurement you specified. Water temperatures below 70 F usually require wearing a wetsuit.</div>
+            <div class="cell">Integer</div>
+        </div>
+        <div class="row">
+            <div class="cell">`{day}/{time}`/surfheight</div>
+            <div class="cell">The height of the waves, returned in either feet or centimeters depending on the unit of measurement you specified. A minimum surf height of 3 feet is needed for surfing. Surf heights exceeding 10 feet are not safe.</div>
+            <div class="cell">Integer</div>
+        </div>
+        <div class="row">
+            <div class="cell">`{day}/{time}`/recommendation</div>
+            <div class="cell">An overall recommendation of whether or not you should go surfing. The recommendation is based on a combination of factors including wind, watertemp, and surfheight. Three responses are possible: (1) &quot;Go surfing!&quot;, (2) &quot;Surfing conditions are okay, not great.&quot;, and (3) &quot;Not a good day for surfing.&quot;</div>
+            <div class="cell">String</div>
+        </div>
+    </div>
+</div>
