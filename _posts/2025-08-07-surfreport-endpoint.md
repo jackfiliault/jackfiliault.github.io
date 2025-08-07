@@ -1,10 +1,9 @@
 ---
+layout: post
 title: Surfreport endpoint
-date: YYYY-MM-DD HH:MM:SS +/- 0800
-categories: [writing sample, api docs]
-tags: [api docs]     # TAG names should always be lowercase
+date: '2025-08-07 12:29:05 -0700'
 ---
-# SurfREPORTLSKDJTGPLKDJF
+# Surfreport
 Contains information about surfing conditions, including the surf height, wind speed, water temperature, and tide. Also provides a recommendation about whether or not to go surfing.
 
 # Endpoints
