@@ -2,8 +2,8 @@
 layout: post
 title: DITA and OxygenXML Sample - Concept
 date: '2025-08-07 13:52:42 -0700'
-categories: [Writing sample]
-tags: [dita]     # TAG names should always be lowercase
+categories: []
+tags: []     # TAG names should always be lowercase
 ---
 This sample was written in Oxygen XML using the DITA structure. This sample is a concept topic following the DITA structure for one of the screens in Sunrise Financial manager. An accompanying procedure topic is included in my portfolio.  
 

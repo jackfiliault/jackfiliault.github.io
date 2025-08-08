@@ -2,8 +2,8 @@
 layout: post
 title: REST API Documentation Sample
 date: '2025-08-07 12:29:05 -0700'
-categories: [Writing sample]
-tags: [api]     # TAG names should always be lowercase
+categories: []
+tags: []     # TAG names should always be lowercase
 pin: true
 ---
 This sample was written as part of the [Documenting APIs: a guide for technical writers and engineers](https://idratherbewriting.com/learnapidoc/) course by Tom Johnson.  
