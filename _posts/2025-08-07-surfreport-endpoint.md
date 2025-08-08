@@ -126,6 +126,7 @@ The following is a sample response from the `surfreport\{beachId}` endpoint:
         <td>Description</td>
       </tr>
     </thead>
+  <tbody>
     <tr>
         <td>beach</td>
         <td>String</td>
@@ -144,7 +145,10 @@ The following is a sample response from the `surfreport\{beachId}` endpoint:
     <tr>
         <td><code>{day}/{time}</code>/tide</td>
         <td>Integer</td>
-        <td>The level of tide at the beach for a specific day and time. Tide is the distance inland that the water rises to. Positive numbers indicate the tide is higher inland. Negative numbers indicate that the tide is out toward the sea. The 0 point reflects the line when a tide is neither going in nor out but is in transition between the two states.</td>
+        <td>
+          <p>The level of tide at the beach for a specific day and time. Tide is the distance inland that the water rises to.</p> 
+          <p>Positive numbers indicate the tide is higher inland. Negative numbers indicate that the tide is out toward the sea. The 0 point reflects the line when a tide is neither going in nor out but is in transition between the two states.</p>
+        </td>
     </tr>
     <tr>
         <td><code>{day}/{time}</code>/wind</td>
@@ -166,4 +170,5 @@ The following is a sample response from the `surfreport\{beachId}` endpoint:
         <td>String</td>
         <td>An overall recommendation of whether or not you should go surfing. The recommendation is based on a combination of factors including wind, watertemp, and surfheight. Three responses are possible: (1) "Go surfing!", (2) "Surfing conditions are okay, not great.", and (3) "Not a good day for surfing."</td>
     </tr>
+  </tbody>
 </table>
