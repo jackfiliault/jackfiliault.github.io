@@ -2,7 +2,7 @@
 layout: post
 title: REST API Documentation Sample
 date: '2025-08-07 12:29:05 -0700'
-categories: [Writing sample, API Docs]
+categories: [Writing sample]
 tags: [api]     # TAG names should always be lowercase
 pin: true
 ---

@@ -3,9 +3,6 @@
 icon: fas fa-info-circle
 order: 4
 ---
-## Summary
-Technical writer with 5 years of experience writing documentation for software in the healthcare industry.
-
 ## Experience
 ### Technical Writer - IQVIA | Sep 2022 - Aug 2025
 - Scoped, wrote, and edited documentation for end users and on-site technical resources.
@@ -40,6 +37,6 @@ MadCap Flare | DITA | Git | Markdown | Ixiasoft CCMS | Oxygen XML | Confluence |
 B.A. English – Christopher Newport University - May 2019
 
 ## Self-study
-Documenting APIs: a Guide for Technical Writers – idratherbewriting.com 
-Learn API Technical Writing: JSON and XML for Writers – Udemy
-Introduction to DITA – LearningDITA.com
+Documenting APIs: a Guide for Technical Writers – idratherbewriting.com  
+Learn API Technical Writing: JSON and XML for Writers – Udemy  
+Introduction to DITA – LearningDITA.com  

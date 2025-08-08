@@ -1,9 +1,9 @@
 ---
 layout: post
-title: PDF samples
+title: Flare and DITA Output Samples
 date: '2025-08-07 14:41:50 -0700'
-categories: [Writing sample, DITA]
-tags: [PDF]     # TAG names should always be lowercase
+categories: [Writing sample]
+tags: [output]     # TAG names should always be lowercase
 ---
 This article includes links to two PDF files. 
 - [Patient Screening conceptual topic for an administrator tool](/assets/Patient Screening Category Manager.pdf)
