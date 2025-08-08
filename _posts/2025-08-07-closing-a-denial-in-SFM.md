@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Procedure topic for Sunrise Financial Manager
+title: DITA and OxygenXML Sample - Procedure
 date: '2025-08-07 13:42:19 -0700'
 categories: [Writing sample, DITA]
 tags: [dita]     # TAG names should always be lowercase

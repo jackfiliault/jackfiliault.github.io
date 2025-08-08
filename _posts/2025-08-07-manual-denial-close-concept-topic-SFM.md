@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Concept topic for Sunrise Financial Manager
+title: DITA and OxygenXML Sample - Concept
 date: '2025-08-07 13:52:42 -0700'
 categories: [Writing sample, DITA]
 tags: [dita]     # TAG names should always be lowercase

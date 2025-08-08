@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Release Notes for Patient Screening
+title: Release Notes Sample
 date: '2025-08-07 14:00:39 -0700'
 categories: [Writing sample, Release Notes]
 tags: [release note]     # TAG names should always be lowercase

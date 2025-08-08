@@ -1,38 +1,43 @@
 ---
 layout: post
-title: Surfreport resource
+title: REST API Documentation Sample
 date: '2025-08-07 12:29:05 -0700'
 categories: [Writing sample, API Docs]
 tags: [api]     # TAG names should always be lowercase
 pin: true
 ---
-This sample was written as part of the [Documening APIs: a guide for technical writers and engineers](https://idratherbewriting.com/learnapidoc/) course by Tom Johnson. This sample is an API reference document for a ficitonal API resource.
+This sample was written as part of the [Documenting APIs: a guide for technical writers and engineers](https://idratherbewriting.com/learnapidoc/) course by Tom Johnson.  
+This sample is an API reference document for a fictional API resource so the calls do not work.
 
-# Surfreport
-Contains information about surfing conditions, including the surf height, wind speed, water temperature, and tide. Also provides a recommendation about whether or not to go surfing.
+## Surfreport
+Contains information about surfing conditions including the surf height, wind speed, water temperature, and tide. Also provides a recommendation about whether or not to go surfing.
 
-# Endpoints
-`GET` **/surfreport/{beachId}**
+## Endpoints
+`GET` <code>/surfreport/{beachId}</code>  
 Gets the surfing conditions for a specific beach ID.
 
-# Parameters
-## Path parameters
+## Parameters
+### Path parameters
 <table>
     <thead>
         <tr>
             <th>Path parameter</th>
+            <th>Optional or Required</th>
+            <th>Type</th>
             <th>Description</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td>{beachId}</td>
-            <td>The value for the beach you want to look up. The list of beaches is available at https://example.com/surfreport/beaches_available</td>
+            <td><code>{beachId}</code></td>
+            <td>Required</td>
+            <td>Integer</td>
+            <td>The value for the beach you want to look up. The list of beaches is available at <a href="https://example.com">EXAMPLE BEACH LIST LINK</a> Example: 12345</td>
         </tr>
     </tbody>
 </table>
 
-## Query string
+### Query parameters
 <table>
     <thead>
         <tr>
@@ -44,32 +49,39 @@ Gets the surfing conditions for a specific beach ID.
     </thead>
     <tbody>
         <tr>
-            <td>Days</td>
+            <td><code>appid</code></td>
+            <td>Required</td>
+            <td>Integer</td>
+            <td>Your API key. You can request an API key at <a href="https://example.com">EXAMPLE API KEY LINK</a>.</td>
+        </tr>
+        <tr>
+            <td><code>days</code></td>
             <td>Optional</td>
             <td>Integer</td>
             <td>The number of days to include in the response. Default value is 3 and maximum value is 7.</td>
         </tr>
         <tr>
-            <td>Units</td>
+            <td><code>units</code></td>
             <td>Optional</td>
             <td>String</td>
-            <td>The unit of measurement for the response. Imperial returns values in feet and knots. Metric returns values in centimeters and kilometers per hour.</td>
+            <td>The unit of measurement for the response. Imperial is the default, and returns values in feet and knots. Metric returns values in centimeters and kilometers per hour.</td>
         </tr>
         <tr>
-            <td>Time</td>
+            <td><code>time</code></td>
             <td>Optional</td>
             <td>Integer. Unix format (ms since 1970 in UTC)</td>
-            <td>If you include the time, the response only includes the surf condition for the hour specified.</td>
+            <td>If you include the time, the response only includes the surf condition for the hour specified. Default returns every hour for each day.</td>
         </tr>
     </tbody>
 </table>
 
-# Sample request
-`curl -I -X GET "https://api.openweathermap.org/data/2.5/surfreport?zip=95050&appid=APIKEY&units=imperial&days=2"`  
+## Sample request
+`curl "https://api.example.org/data/2.5/surfreport/12345?appid=APIKEY&days=3&units=imperial&time=1754668782"`  
 (In the above code, replace 'APIKEY' with your actual API key.)
 
-# Sample response
-The following is a sample response from the `surfreport\{beachId}` endpoint:
+## Response example
+The following is a sample response from the `surfreport\{beachId}` endpoint:  
+
 ```json
 {
     "surfreport": [
@@ -105,7 +117,7 @@ The following is a sample response from the `surfreport\{beachId}` endpoint:
 }
 ```
 
-## Response definitions
+### Response
 <table>
     <thead>
       <tr>
@@ -142,7 +154,7 @@ The following is a sample response from the `surfreport\{beachId}` endpoint:
     <tr>
         <td><code>{day}/{time}</code>/watertemp</td>
         <td>Integer</td>
-        <td>The temperature of the ocean water, returned in Fahrenheit or Celcius depending on the unit of measurement you specified. Water temperatures below 70 F usually require wearing a wetsuit.</td>
+        <td>The temperature of the ocean water, returned in Fahrenheit or Celsius depending on the unit of measurement you specified. Water temperatures below 70 F usually require wearing a wetsuit.</td>
     </tr>
     <tr>
         <td><code>{day}/{time}</code>/surfheight</td>
@@ -152,6 +164,6 @@ The following is a sample response from the `surfreport\{beachId}` endpoint:
     <tr>
         <td><code>{day}/{time}</code>/recommendation</td>
         <td>String</td>
-        <td>An overall recommendation of whether or not you should go surfing. The recommendation is based on a combination of factors including wind, watertemp, and surfheight. Three responses are possible: (1) &quot;Go surfing!&quot;, (2) &quot;Surfing conditions are okay, not great.&quot;, and (3) &quot;Not a good day for surfing.&quot;</td>
+        <td>An overall recommendation of whether or not you should go surfing. The recommendation is based on a combination of factors including wind, watertemp, and surfheight. Three responses are possible: (1) "Go surfing!", (2) "Surfing conditions are okay, not great.", and (3) "Not a good day for surfing."</td>
     </tr>
 </table>
