@@ -5,9 +5,9 @@ order: 4
 ---
 ## Experience
 ### Technical Writer - IQVIA | Sep 2022 - Aug 2025
+- Received an award for rewriting documentation and resolving feedback to retain an essential client.
 - Scoped, wrote, and edited documentation for end users and on-site technical resources.
 - Interviewed product and software subject matter experts to ensure accuracy of documentation.
-- Reformatted and rewrote documentation to resolve negative feedback and retain an essential customer.
 - Integrated Git for source control in Flare.
 - Collaborated directly with UI/UX design team and product manager during mockup creation and requirement writing as a user advocate.
 - Redesigned layout and style of context-sensitive help documentation to algin with Web Content Accessibility Guidelines (WCAG)
